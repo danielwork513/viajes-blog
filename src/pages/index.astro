@@ -8,7 +8,15 @@ import { latestPosts } from "@utils/content";
 <Layout title="">
   <Container>
     <main>
-      <div class="grid gap-10 lg:gap-10 md:grid-cols-2">
+      <h1 class=" font-bold text-3xl md:text-4xl text-amber-500 dark:text-amber-200">
+        Viaja con nosotros por todo el mundo
+      </h1>
+
+      <h2 class="mb-10 mt-3 font-semibold text-xl md:text-xl">
+        Conoce los mejores destinos para viajar y vivir experiencias inolvidables
+      </h2>
+
+      <div class="grid gap-6 lg:gap-10 md:grid-cols-2">
         {
           latestPosts
             .slice(0, 2)
@@ -17,7 +25,7 @@ import { latestPosts } from "@utils/content";
             ))
         }
       </div>
-      <div class="grid gap-10 mt-10 lg:gap-10 md:grid-cols-2 xl:grid-cols-3">
+      <div class="grid gap-10 mt-10 lg:gap-6 md:grid-cols-2 xl:grid-cols-3">
         {
           latestPosts
             .slice(2)
