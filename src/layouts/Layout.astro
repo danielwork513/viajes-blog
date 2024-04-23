@@ -1,0 +1,42 @@
+---
+import Footer from "@components/footer.astro"
+import Navbar from "@components/navbar.astro"
+import "@fontsource/inter/variable.css"
+
+export interface Props {
+  title?: string
+  desc?: string
+  ogimage?: string
+}
+---
+
+<!DOCTYPE html>
+<html lang='es'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width' />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+
+    <!-- Open Graph / Facebook -->
+    <meta property='og:url' content='' />
+    <meta property='og:title' content='.' />
+
+    <!-- Twitter -->
+    <meta property='twitter:url' content='' />
+    <meta property='twitter:title' content='.' />
+
+    <!-- Primary Meta Tags -->
+    <title>Pasaportes Mexicanos | blog</title>
+    <meta name='title' content='.' />
+  </head>
+  <body>
+    <Navbar />
+    <slot />
+    <Footer />
+    <style is:global>
+      img {
+        content-visibility: auto;
+      }
+    </style>
+  </body>
+</html>
